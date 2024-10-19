@@ -717,6 +717,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .\!me-1 {
   margin-inline-end: 0.25rem !important;
 }
@@ -731,6 +736,10 @@ video {
 
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-2 {
@@ -824,6 +833,10 @@ video {
 
 .\!h-2\.5 {
   height: 0.625rem !important;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-2 {
@@ -956,6 +969,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-3 {
@@ -1160,6 +1177,24 @@ video {
   fill: #000;
 }
 
+.fill-gray-300 {
+  fill: #d1d5db;
+}
+
+.fill-yellow-500 {
+  fill: #eab308;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1211,6 +1246,11 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-2 {
@@ -1275,6 +1315,11 @@ video {
 .\!text-sm {
   font-size: 0.875rem !important;
   line-height: 1.25rem !important;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1430,8 +1475,17 @@ video {
   margin-inline-end: 1rem;
 }
 
+.file\:rounded-lg::file-selector-button {
+  border-radius: 0.5rem;
+}
+
 .file\:border-0::file-selector-button {
   border-width: 0px;
+}
+
+.file\:bg-blue-600::file-selector-button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .file\:bg-gray-50::file-selector-button {
@@ -1444,9 +1498,28 @@ video {
   padding-right: 1rem;
 }
 
+.file\:py-2::file-selector-button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .file\:py-3::file-selector-button {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.file\:text-sm::file-selector-button {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.file\:font-semibold::file-selector-button {
+  font-weight: 600;
+}
+
+.file\:text-white::file-selector-button {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:bg-blue-700:hover {
@@ -1484,6 +1557,11 @@ video {
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
+.hover\:file\:bg-blue-700::file-selector-button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
 .focus\:z-10:focus {
   z-index: 10;
 }
@@ -1518,11 +1596,6 @@ video {
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
-.focus\:text-blue-800:focus {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
-}
-
 .focus\:opacity-80:focus {
   opacity: 0.8;
 }
@@ -1548,6 +1621,14 @@ video {
 }
 
 .disabled\:opacity-50:disabled {
+  opacity: 0.5;
+}
+
+.file\:disabled\:pointer-events-none:disabled::file-selector-button {
+  pointer-events: none;
+}
+
+.file\:disabled\:opacity-50:disabled::file-selector-button {
   opacity: 0.5;
 }
 
@@ -1611,14 +1692,19 @@ video {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
-.dark\:divide-neutral-700:is(.dark *) > :not([hidden]) ~ :not([hidden]) {
+.dark\:divide-gray-700:is(.dark *) > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
-  border-color: rgb(64 64 64 / var(--tw-divide-opacity));
+  border-color: rgb(55 65 81 / var(--tw-divide-opacity));
 }
 
 .dark\:\!border-neutral-700:is(.dark *) {
   --tw-border-opacity: 1 !important;
   border-color: rgb(64 64 64 / var(--tw-border-opacity)) !important;
+}
+
+.dark\:border-gray-700:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
 .dark\:border-neutral-600:is(.dark *) {
@@ -1656,6 +1742,11 @@ video {
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
+.dark\:bg-slate-900:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
 .dark\:bg-white:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1672,6 +1763,16 @@ video {
 .dark\:text-blue-500:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.dark\:text-gray-200:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.dark\:text-gray-400:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .dark\:text-neutral-200:is(.dark *) {
@@ -1712,6 +1813,11 @@ video {
 .dark\:placeholder-neutral-500:is(.dark *)::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(115 115 115 / var(--tw-placeholder-opacity));
+}
+
+.dark\:file\:bg-blue-500:is(.dark *)::file-selector-button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .dark\:file\:bg-neutral-700:is(.dark *)::file-selector-button {
@@ -1759,6 +1865,11 @@ video {
   color: rgb(212 212 212 / var(--tw-text-opacity));
 }
 
+.dark\:hover\:file\:bg-blue-400:is(.dark *)::file-selector-button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
 .dark\:focus\:bg-neutral-200:focus:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(229 229 229 / var(--tw-bg-opacity));
@@ -1767,11 +1878,6 @@ video {
 .dark\:focus\:bg-neutral-800:focus:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(38 38 38 / var(--tw-bg-opacity));
-}
-
-.dark\:focus\:text-blue-400:focus:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 .dark\:focus\:text-blue-500:focus:is(.dark *) {
@@ -1788,6 +1894,11 @@ video {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.dark\:focus\:ring-gray-600:focus:is(.dark *) {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity));
 }
 
 .dark\:focus\:ring-neutral-600:focus:is(.dark *) {
